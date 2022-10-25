@@ -24,6 +24,7 @@ p {
   margin: 0 !important;
   padding: 0 !important;
   line-height: normal !important;
+  position: relative;
 }
 .wrap {
   width: calc(100% - 30px);
@@ -71,13 +72,12 @@ p {
   padding: 10px 0;
 }
 .nav-links ul li a {
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
   color: #fff;
   display: inline-block;
   text-decoration: none;
-  font-family: "Catamaran", sans-serif;
-  display: inline-block;
+  font-family: "Roboto", sans-serif;
   position: relative;
 }
 .nav-links ul li a:hover {
@@ -101,20 +101,28 @@ p {
 
 /* start hero content */
 .hero {
-  background-image: url(./assets/taxi.png);
+  background-image: url(./assets/unsplash.jpg);
   /* margin: 0 auto; */
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  height: 70%;
+  background-position: center;
 }
-.hero::after {
+.hero::before {
   content: "";
   display: block;
-  padding: 30% 0 0 0;
+  /* padding: 30% 0 0 0; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 .content-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px 0 0 0;
 }
 .numbers {
   display: flex;
@@ -143,7 +151,60 @@ p {
 }
 .telephone a i {
   color: #ffff00;
+  padding: 0 5px 0 0;
+}
+.connect {
+  width: 100%;
+}
+.download {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 40px 0;
+  align-items: center;
+  position: relative;
+}
+.center {
+  text-align: center;
+  padding: 20px 0 60px 0 !important;
+  font-weight: 700;
+}
+.store {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.apple {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.apple i {
+  font-size: 30px;
+  color: #fff;
   padding: 0 10px 0 0;
+}
+.apple a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.apple a:hover {
+  color: #ffff00;
+}
+.phone h2 {
+  color: green;
+}
+.swiper {
+  width: 100%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80% !important;
 }
 
 @media (min-width: 1200px) {
@@ -187,7 +248,16 @@ p {
     bottom: -2;
     left: 0;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease-in-out;
+  }
+  .connect {
+    width: 50%;
+  }
+  .swiper {
+    width: 50%;
+  }
+  .swiper-slide {
+    height: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -195,5 +265,8 @@ p {
     display: flex;
     width: calc(60% - 30px);
     justify-content: space-between;
+  }
+  .swiper {
+    width: 50%;
   }
 }
