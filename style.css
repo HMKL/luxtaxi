@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700,700|Source+Sans+Pro:400,600");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+a {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container-fluid {
+  padding: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #fff;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: normal !important;
+}
+.wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+.nav-bar {
+  background: #dd3333;
+}
+.content.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.logo {
+  max-width: 100px;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-evenly;
+  right: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.nav-links {
+  display: none;
+}
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.nav-links ul li {
+  padding: 10px 0;
+}
+.nav-links ul li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Catamaran", sans-serif;
+  display: inline-block;
+  position: relative;
+}
+.nav-links ul li a:hover {
+  color: #ffff00;
+  transition: all 0.3s ease;
+}
+
+.nav-links > ul > li a:hover:after {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.last {
+  padding: 10px 0 0 0 !important;
+}
+.show {
+  display: block;
+  width: 100%;
+}
+
+/* end of navbar */
+
+/* start hero content */
+.hero {
+  background-image: url(./assets/taxi.png);
+  /* margin: 0 auto; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero::after {
+  content: "";
+  display: block;
+  padding: 30% 0 0 0;
+}
+.content-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.numbers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.numbers a {
+  color: #fff;
+}
+.btn-call {
+  display: none;
+}
+.telephone {
+  display: flex;
+  width: calc(75% - 30px);
+  justify-content: space-between;
+}
+.telephone a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.telephone a:hover {
+  color: yellow;
+}
+.telephone a i {
+  color: #ffff00;
+  padding: 0 10px 0 0;
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    max-width: 1650px;
+  }
+  .content.header {
+    flex-direction: row;
+
+    align-items: center;
+  }
+  .nav-links {
+    display: block;
+  }
+  .nav-links ul {
+    flex-direction: row;
+  }
+  .nav-links ul li {
+    padding: 0 15px;
+  }
+  .last {
+    padding: 0 0 0 15px !important;
+  }
+  .hamburger {
+    display: none;
+  }
+  .logo {
+    max-width: 140px;
+  }
+  .nav-links ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  .nav-links ul li a::after {
+    content: "";
+    width: 100%;
+    background-color: #ffff00;
+    position: absolute;
+    height: 2px;
+    bottom: -2;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .telephone {
+    display: flex;
+    width: calc(60% - 30px);
+    justify-content: space-between;
+  }
+}
