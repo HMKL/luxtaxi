@@ -264,6 +264,7 @@ p {
   padding: 15px;
   position: relative;
   align-self: start;
+  text-align: center;
 }
 .content-offer-items i {
   font-size: 30px;
