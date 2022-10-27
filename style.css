@@ -310,7 +310,7 @@ p {
 
 .prices {
   background-color: #1f2125;
-  color: white;
+  overflow-x: hidden;
 }
 .prices::after {
   content: "";
@@ -335,6 +335,7 @@ p {
   width: 100%;
   border: 1px solid #585858;
   text-align: center;
+  color: #fff;
 }
 .item-price.first {
   margin: 0 0 15px 0;
