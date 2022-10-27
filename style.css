@@ -5,9 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  overflow-x: hidden;
-}
+
 ul {
   padding: 0 !important;
   margin: 0 !important;
@@ -337,6 +335,8 @@ p {
   width: 100%;
   border: 1px solid #585858;
   text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .item-price.first {
   margin: 0 0 15px 0;
