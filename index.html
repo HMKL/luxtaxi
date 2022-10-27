@@ -9,6 +9,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="javascript.js" defer></script>
     <title>LuxTaxi</title>
 </head>
@@ -61,7 +62,7 @@
                         <img src="./assets/logo.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="swiper main">
+                <div class="swiper main" id="main">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide main">
                             <div class="connect">
@@ -158,13 +159,13 @@
 
 
 
-    <!-- <div class="testimonial">
+    <!-- <div class="testimonial aos-init aos-animate" data-aos="fade-up">
         <div class="wrap">
             <h2 class="center-testimonial">Ce spun clientii Lux Taxi</h2>
 
-            <div class="swiper second">
+            <div class="swiper second" id="second">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide ">
+                    <div class="swiper-slide">
                         <div class="wrap-testimonial">
                             <i class="fa-regular fa-file-lines"></i>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti officiis adipisci
@@ -173,13 +174,36 @@
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti officiis adipisci
                                 doloremque,
                                 perferendis quas consequuntur dignissimos? Temporibus illo similique delectus?</p>
-                            <img src="images/clients1.jpg" alt="">
                             <h3>Rita Kimmons</h3>
                             <h5>Marketing</h5>
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">
+                        <div class="wrap-testimonial">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti officiis adipisci
+                                doloremque,
+                                perferendis quas consequuntur dignissimos? Temporibus illo similique delectus?</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti officiis adipisci
+                                doloremque,
+                                perferendis quas consequuntur dignissimos? Temporibus illo similique delectus?</p>
+                            <h3>Rita Kimmons</h3>
+                            <h5>Marketing</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrap-testimonial">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti officiis adipisci
+                                doloremque,
+                                perferendis quas consequuntur dignissimos? Temporibus illo similique delectus?</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti officiis adipisci
+                                doloremque,
+                                perferendis quas consequuntur dignissimos? Temporibus illo similique delectus?</p>
+                            <h3>Rita Kimmons</h3>
+                            <h5>Marketing</h5>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -191,7 +215,46 @@
     </div> -->
 
 
-    <div>asdasd</div>
+    <div class="prices">
+        <div class="wrap">
+            <h2 class="center-price">Tarife</h2>
+            <div class="pricing-item">
+                <div class="item-price first">
+                    <div class="title">
+                        <h2>Tarife de zi</h2>
+                        <p>6AM - 10PM</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price">
+                        <p>Pornire de la</p>
+                        <h2>2.44 Lei - 2.99 Lei</h2>
+                    </div>
+                    <div class="price">
+                        <p>Staționare de la</p>
+                        <h2>24.40 Lei - 29.90 Lei</h2>
+                        <p>Tarif Lei/Km de la 2.44 Lei</p>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <div class="title">
+                        <h2>Tarife de noapte</h2>
+                        <p>10PM - 6AM</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price">
+                        <p>Pornire de la</p>
+                        <h2>2.64 Lei - 2.99 Lei</h2>
+                    </div>
+                    <div class="price">
+                        <p>Staționare de la</p>
+                        <h2>26.40 Lei - 29.90 Lei</h2>
+                        <p>Tarif Lei/Km de la 2.64 Lei</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
@@ -207,7 +270,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>
