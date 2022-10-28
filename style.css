@@ -330,6 +330,8 @@ p {
   justify-content: space-between;
   max-width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .item-price {
   width: 100%;
@@ -502,9 +504,4 @@ p {
   .item-price.first {
     margin: 0;
   }
-}
-
-.pricing-item {
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
