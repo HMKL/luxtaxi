@@ -503,3 +503,8 @@ p {
     margin: 0;
   }
 }
+
+.pricing-item {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
