@@ -5,7 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+body > div {
+  overflow-x: hidden;
+}
 ul {
   padding: 0 !important;
   margin: 0 !important;
@@ -310,7 +312,7 @@ p {
 
 .prices {
   background-color: #1f2125;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .prices::after {
   content: "";
