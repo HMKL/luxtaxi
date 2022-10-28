@@ -5,9 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
-body > div {
-  overflow-x: hidden;
-}
+
 ul {
   padding: 0 !important;
   margin: 0 !important;
