@@ -106,13 +106,18 @@ p {
 
 /* start hero content */
 .hero {
-  background-image: url(./assets/hero.png);
+  background-image: url(./assets/newtaxi1.png);
   /* margin: 0 auto; */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 60%;
-  background-position: center;
+  /* height: 60%; */
+  background-position: right;
+}
+.hero::after {
+  content: "";
+  display: block;
+  padding: 0 0 20% 0;
 }
 .hero::before {
   content: "";
@@ -123,6 +128,7 @@ p {
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .content-hero {
   display: flex;
   flex-direction: column;
@@ -249,7 +255,7 @@ p {
 .offer::after {
   content: "";
   display: block;
-  padding: 20px;
+  padding: 0 0 20px 0;
 }
 .content-offer {
   display: flex;
@@ -315,7 +321,7 @@ p {
 .prices::after {
   content: "";
   display: block;
-  padding: 20px;
+  padding: 0 0 20px 0;
 }
 .center-price {
   text-align: center;
@@ -337,6 +343,7 @@ p {
   border: 1px solid #585858;
   text-align: center;
   color: #fff;
+  position: relative;
 }
 .item-price.first {
   margin: 0 0 15px 0;
@@ -348,21 +355,61 @@ p {
   padding: 30px 0;
   position: relative;
 }
-/* .title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #ff8b38;
-  left: 0%;
-  right: 0%;
-} */
 .price {
   padding: 10px 0 20px;
 }
 .price h2 {
   font-family: "Playfair Display", serif;
+}
+
+/* end testimoniali */
+
+/* start footer content */
+.footer {
+  background-color: #111010;
+}
+.content-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0 50px 0 !important;
+}
+
+.items-footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+.items-footer p {
+  font-size: 13px;
+  line-height: 20px !important;
+  color: #bdbdbd;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  padding-right: 20px !important;
+}
+.items-footer a {
+  font-size: 13px;
+  color: #bdbdbd;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+}
+.items-footer a:hover {
+  color: #ffff00;
+}
+.items-footer i {
+  padding: 0 5px 0 0;
+}
+.media {
+  display: flex;
+  flex-direction: row;
+}
+.media i {
+  font-size: 20px;
+  padding: 5px 10px 0 0;
 }
 @media (min-width: 1200px) {
   .wrap {
@@ -461,12 +508,21 @@ p {
   .pricing-item {
     flex-direction: row;
     max-width: 60%;
+    overflow-x: visible;
   }
   .item-price {
     width: calc(50% - 20px);
   }
+
   .item-price.first {
     margin: 0;
+  }
+  .content-footer {
+    flex-direction: row;
+  }
+  .items-footer {
+    width: calc(25% - 30px);
+    padding: 0;
   }
 }
 
