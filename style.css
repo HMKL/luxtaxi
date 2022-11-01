@@ -374,7 +374,7 @@ p {
 
 /* end testimoniali */
 
-/* start footer content */
+/* start footer content main */
 .footer {
   background-color: #111010;
 }
@@ -422,7 +422,59 @@ p {
   padding: 5px 10px 0 0;
 }
 
-/* end footer content */
+/* end footer content main */
+
+/*start footer content second*/
+.second-footer {
+  background-color: #1b1b1b;
+}
+.btn-footer {
+  padding: 10px 0;
+  background-color: #1b1b1b;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  border: none;
+  text-align: left;
+  border-bottom: 1px solid #2c2c2c;
+}
+.btn-footer::after {
+  position: absolute;
+  right: 0;
+  content: "\f068";
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fff;
+  width: auto !important;
+  /* transform: translateY(-50%) rotate(-90deg); */
+  transition: transform 0.15s ease-in-out;
+}
+.btn-footer.collapsed span {
+  color: #bdbdbd;
+}
+.btn-footer.collapsed::after {
+  /* transform: translateY(-50%) rotate(0deg); */
+  transition: transform 0.15s ease-in-out;
+  content: "\2b";
+}
+.btn-footer span {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.accordion-item {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.btn-footer:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/*end footer content second*/
 
 /* start copyright content */
 
