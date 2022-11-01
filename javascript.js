@@ -60,12 +60,12 @@ const swiperTestimonial = new Swiper('#second', {
   //   nextEl: '.swiper-button-next',
   //   prevEl: '.swiper-button-prev',
   // },
-  // speed: 2000,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  speed: 2000,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   // pagination: {
   //   el: '.swiper-pagination',
   //   dynamicBullets: true,
