@@ -392,6 +392,9 @@ p {
   width: 100%;
   padding: 0 0 10px 0;
 }
+.items-footer ul {
+  padding: 0 0 0 10px !important;
+}
 .items-footer p {
   font-size: 13px;
   line-height: 20px !important;
@@ -601,6 +604,9 @@ p {
   .items-footer {
     width: calc(25% - 30px);
     padding: 0;
+  }
+  .items-footer ul {
+    padding: 0 !important;
   }
   .wrap-partners {
     width: 25%;
